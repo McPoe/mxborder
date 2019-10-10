@@ -88,7 +88,6 @@ header.menudegr{
 
 
 
-
   /*Trigger Button*/
 .login-trigger {
   font-weight: bold;
@@ -252,7 +251,10 @@ h4 {
 }
 
 
-
+.show-on-mobile{
+  display: none;
+  visibility: hidden;
+}
 
 
 
@@ -1425,6 +1427,15 @@ article {
     padding: 30px; }
   .emailmob{
     margin-left: -20px !important;
+  }
+  .hide-on-mobile{
+    display: none;
+    visibility: hidden;
+  }
+
+  .show-on-mobile{
+    display: block;
+    visibility: visible;
   }
 }
 /*--------------------------------------------------
