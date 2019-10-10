@@ -706,6 +706,7 @@ li.requisitos{
   background-image: url("../assets/img/slider.jpg");
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   overflow: hidden;
   display: block;
   position: relative; }
@@ -1422,7 +1423,7 @@ article {
   .keep-touch--white {
     padding: 30px; }
   .emailmob{
-    margin-left: -15px !important;
+    margin-left: -20px !important;
   }
 }
 /*--------------------------------------------------
