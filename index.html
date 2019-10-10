@@ -9,7 +9,6 @@
     <link href="css/vendor/font-awesome.css" rel="stylesheet" />
     <link href="css/vendor/slick.css" rel="stylesheet" />
     <link href="css/vendor/slick-theme.css" rel="stylesheet" />
-    <link href="css/vendor/odometer-theme-default.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
@@ -21,12 +20,12 @@
             </div>
             <div class="menu">
                 <ul class="menuhzt">
-                    <li><a href="intro.html" class="active">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#best">La Mejor Opción</a></li>
                     <li><a href="#join">Únete</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#" style="background-color: #002868; padding: 15px 25px; color: #FFF; border-radius: 10px;" class="login2">Login</a></li>
+                    <li><a class="login-trigger" href="#" data-target="#login" data-toggle="modal" style="padding: 15px 25px; color: #FFF; border-radius: 10px;">Login</a></li>
                     <li>
                         <a href="#" style="background-color: #002868; padding: 15px 25px; color: #FFF; border-radius: 10px;" class="clientfixed2">
                             <h4>¿Quieres contratar un seguro?</h4>
@@ -40,14 +39,35 @@
             </div>
         </div>
     </header>
+   
 
+
+
+
+    <div id="login" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button data-dismiss="modal" class="close">&times;</button>
+            <h4>Ingresar</h4>
+            <form>
+              <input type="text" name="usuario" class="username form-control" placeholder="Usuario"/>
+              <input type="password" name="contraseña" class="password form-control" placeholder="Contraseña"/>
+              <input class="btn login" type="submit" value="Login" />
+            </form>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+<!--
     <a href="#">
         <div class="clientfixed">
             <h4>¿Quieres contratar un seguro?</h4>
             <a href="" class="button">Click aquí</a>
         </div>
     </a>
-
+-->
     <div class="home-slider">
         <div class="home-slider--wrapper">
             <div>
@@ -55,7 +75,7 @@
                     <div class="container">
                         <h1>SEGURO DE AUTO<br>PARA MÉXICO</h1>
                         <span class="dot-dash dd-red">.</span>
-                        <h2>LLÁMANOS<br><font>U.S. 800 776 8985</font>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<font>MX 800 681 6541</font></h2>
+                        <h2>LLÁMANOS<br>U.S. 800 776 8985&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;MX 800 681 6541</h2>
                         
                     </div>
                 </div>
@@ -290,26 +310,23 @@
             </div>
         </footer>
 
-    <script type="text/javascript">
-        $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
 
+    <script type="text/javascript">
+        
         $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
                 }
-            }
+            });
         });
-    });
     </script>
 
     </script>
