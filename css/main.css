@@ -106,6 +106,15 @@ header.menudegr{
   border: 1px solid #002868;
 }
 
+p .mailto{
+  color: #ce1126 !important;
+  margin-left: 0px;
+}
+
+p .mailto:hover{
+  color: #FFF !important;
+}
+
 /*Modal*/
 h4 {
   font-weight: bold;
@@ -705,7 +714,7 @@ li.requisitos{
 
 .statistics {
   padding: 140px 0;
-  background-image: url("../assets/img/slider.jpg");
+  background-image: url("../assets/img/slider2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -713,15 +722,22 @@ li.requisitos{
   overflow: hidden;
   display: block;
   position: relative; }
+
+
   .statistics:before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0; }
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -10;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   .statistics--item {
     position: relative;
     z-index: 1;
@@ -1438,6 +1454,17 @@ article {
     visibility: visible;
   }
 }
+/*
+  .statistics {
+  background-image: url("../assets/img/slider2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  position: relative; }*/
+
 /*--------------------------------------------------
 Typography
 --------------------------------------------------*/
@@ -1529,14 +1556,15 @@ Footer
 --------------------------------------------------*/
 footer {
   overflow: hidden;
-  display: block; }
+  display: block;
+  background-color: #FFF }
   footer .row {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
   footer p {
-    font: 700 14px/1 "Open Sans";
+    font: 400 14px/1 "Open Sans";
     color: #002868;
     text-align: right;
     margin: 10px; }
