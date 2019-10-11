@@ -107,12 +107,12 @@ header.menudegr{
 }
 
 p .mailto{
-  color: #ce1126 !important;
+  color: #FFF !important;
   margin-left: 0px;
 }
 
 p .mailto:hover{
-  color: #FFF !important;
+  color: #ce1126 !important;
 }
 
 /*Modal*/
