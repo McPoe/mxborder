@@ -1635,14 +1635,14 @@ header {
     position: relative; }
   header .menu li {
     float: left;
-    margin-left: 50px; }
+    margin-left: 2vw; }
     header .menu li a {
       display: block;
       font: 500 14px "Open Sans";
       color: #002868;
       text-transform: uppercase; }
       header .menu li a.active, header .menu li a:hover {
-        color: #bf1f2d; }
+        color: #ce1126; }
       header .menu li a.active {
         font-weight: 600; }
   header .mobile-menu {
@@ -1684,7 +1684,7 @@ header {
   header {
     padding: 15px 0; }
   .buttoncotiz{
-    width: 10em !important;
+    width: 8em !important;
     }
   }
 /*--------------------------------------------------
