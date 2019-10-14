@@ -113,7 +113,7 @@ header.menudegr{
 
 .buttoncotiz {
   display: inline-block;
-  min-width: 20vw;
+  min-width: 20em;
   padding: 30px 0;
   margin-top: 1em;
   border: 1px solid #002868;
@@ -1682,7 +1682,10 @@ header {
 
 @media screen and (max-width: 575px) {
   header {
-    padding: 15px 0; } }
+    padding: 15px 0; }
+  .buttoncotiz{
+    width: 10em !important;
+    } }
   .emailmob{
     margin-left: -20px;
   }
