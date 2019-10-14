@@ -92,12 +92,29 @@
                     <p>Tanto el vehículo como el conductor responsables pueden ser retenidos por las autoridades<br>hasta que se presente una prueba válida de responsabilidad civil.</p>
                     <br>
                     <h4 class="textnta">¡NO TE ARRIESGUES!</h4>
-                    <a href="#" class="buttoncotiz">COTIZA AHORA</a>
+                    <a class="buttoncotiz" href="#" data-target="#quote" data-toggle="modal">COTIZA AHORA</a>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <div id="quote" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button data-dismiss="modal" class="close">&times;</button>
+            <h3 style="color:#FFF; font-size: 16px; text-align: center;" >Esta acción te redirigirá a otro sitio web.<br>¿Continuar?</h3>
+            <form class="center-block text-center">
+              <input class="btn login" type="submit" onClick="openNewTab()" value="Continuar"/>
+              <input class="btn login" type="submit" value="Seguir aquí" data-dismiss="modal"/>
+            </form>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    
     <section id="nosotros" class="our-history-about" style="background-color: #f4f5f9">
             <div class="container">
                 <div class="row">
@@ -349,7 +366,13 @@
 
 
     <script type="text/javascript">
-        
+        function openNewTab() {
+            window.open("https://cruceasegurado.com/");
+        }
+    </script>
+
+    <script type="text/javascript">
+
         $(function() {
             $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
