@@ -1684,7 +1684,7 @@ header {
   header {
     padding: 15px 0; }
   .buttoncotiz{
-    width: 8em !important;
+    min-width: 20em !important;
     }
   }
 /*--------------------------------------------------
