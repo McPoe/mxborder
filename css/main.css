@@ -1657,6 +1657,7 @@ header {
 @media screen and (max-width: 991px) {
   header .menu {
     position: fixed;
+    top: 0;
     left: -250px;
     background: #FFF;
     border-color: #002868;
@@ -1664,10 +1665,10 @@ header {
     width: 250px;
     padding: 25px;
     bottom: 0;
-    z-index: 999;
+    z-index: 999999999;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    top: 0; }
+    }
     header .menu.slide-menu {
       left: 0; }
     header .menu li {
