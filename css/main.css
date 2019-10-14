@@ -107,8 +107,29 @@ header.menudegr{
     border-color: #FFF;
     background-color: #ce1126; }
 
+.textnta{
+  color: #ce1126;
+}
 
-
+.buttoncotiz {
+  display: inline-block;
+  min-width: 20vw;
+  padding: 30px 0;
+  margin-top: 1em;
+  border: 1px solid #002868;
+  text-align: center;
+  font: 600 14px/1 "Open Sans";
+  background: #002868;
+  color: #FFF;
+  border-radius: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+  .buttoncotiz:hover {
+    background: transparent;
+    color: #002868;
+    border-color: #002868;
+    background-color: #FFF; }
 
 
   /*Trigger Button*/
@@ -210,7 +231,9 @@ h4 {
   border: 2px solid #FFF;
 }
 
-
+.parrafe p {
+  font-size: 17px;
+}
 
 
 /* Side Menu */
@@ -500,7 +523,7 @@ li.requisitos{
       letter-spacing: 1px; }
 
 .our-history {
-  padding: 100px 0; }
+  padding: 0 0 100px 0; }
   .our-history .col-md-7 {
     padding-left: 75px; }
     .our-history .col-md-7 h2 {
