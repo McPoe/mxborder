@@ -158,6 +158,16 @@ p .mailto:hover{
   color: #ce1126 !important;
 }
 
+.tabbtn{
+  color:#002868;
+  background-color: #FFF;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: solid 1px #002868;
+  border-radius: 5px;
+}
+
+
 /*SWITCH*/
   .dropdown {
   position: relative;
@@ -801,7 +811,6 @@ li.requisitos{
     position: absolute;
     right: -5.5em;
     width: 50%;
-    top: 0;
     bottom: 0;
     z-index: 0; }
     .case-study--right__imageslider img {
@@ -810,7 +819,7 @@ li.requisitos{
       object-position: center;
       -o-object-fit: cover;
       object-fit: cover;
-      width: auto; }
+      width: 468px; }
 
 .statistics {
   padding: 140px 0;
@@ -1529,7 +1538,8 @@ article {
   .our-history .col-md-7 {
     padding-left: 15px; }
   .case-study--right__imageslider img {
-    height: auto; }
+    height: auto;
+    margin: 0 auto; }
   .statistics--item {
     margin-bottom: 30px; }
   .our-services {
