@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>MX CrossBorder</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="mxb.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <link href="css/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="css/vendor/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- USAR ESTE PEDAZO DE CÓDIGO-->
+
+	<header style="background-color: #FFF !important; padding: 2em 0">
+		<div>
+		    <img id="logo_canal" src="http://gruma.autoevalua.com/logosAgencia/46.png" alt="Logo Maseca" style="height: auto; width: 7em; padding-left: 2em;">
+		    <img id="logo_canal" src="http://gruma.autoevalua.com/webAE/images/AUTOEVALUA-SEGUROS-1.png" alt="Logo Autoevalua" style="height: auto; width: 13em; position: absolute; right: 2em;">
+		</div>
+	</header>
+
+
+	<!-- Modal HTML -->
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Sign In</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/examples/actions/confirmation.php" method="post">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block btn-lg">Sign In</button>
+                            </div>
+                            <p class="hint-text"><a href="#">Forgot Password?</a></p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">Don't have an account? <a href="#">Create one</a></div>
+                </div>
+            </div>
+        </div>
+	
+<!-- HASTA AQUÍ, LO DEMÁS ES RELLENO-->
+
+
+
+
+	<section style="background-color: #000;">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: #FFF;">Contáctanos</h2>
+            </div>
+            
+        </section>
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+    $('#myModal').modal('toggle')
+});
+</script>
+
+	<script src="js/vendor/jquery-3.1.0.min.js"></script>
+	<script src="js/vendor/jquery.easing.min.js"></script>
+	<script src="js/vendor/bootstrap.js"></script>
+</body>
+</html>

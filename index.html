@@ -36,6 +36,7 @@
         </div>
     </header>
 
+
     <div id="login" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -51,6 +52,33 @@
         </div>
       </div>  
     </div>
+
+
+<!-- NUEVO MODAL HTML INICIA CODIGO-->
+
+    <div id="myModal" class="modal alerte fade" role="dialog">
+      <div class="modal-dialog" style="top: 30%">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button onclick="change_css();" class="close">&times;</button>
+            <div class="center-block text-center centered">
+                <h4 style="margin: 1.5em;">¡Toma precauciones!</h4>
+                <p style="color: #FFF; font-size: 16px; text-align: center;">A todos nuestros agentes y clientes:<br> Nuestras oficinas cerrarán el lunes 21 de Enero, sin embargo, <b>nuestros sistemas funcionarán con normalidad,</b/><br>y nuestras oficinas estarán abiertas nuevamente el martes 22.<br> ¡Felices fiestas!</p>
+                <div class="center-block center" style="padding: 1em 0px;">
+                    <img src="assets/img/mxbco.png"  alt="Mexico Cross Border" style="width: 50%;" />
+                </div>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+<!-- NUEVO MODAL HTML TERMINA CÓDIGO-->
+
+
+
 
 
     <div class="home-slider">
@@ -374,10 +402,15 @@
             </div>
         </footer>
 
-
     <script type="text/javascript">
         function openNewTab() {
             window.open("https://cruceasegurado.com/");
+        }
+    </script>
+
+    <script type="text/javascript">
+        function change_css(){
+            document.getElementById('myModal').style.cssText = 'display: none; visibility: hidden; opacity: 0;';
         }
     </script>
 

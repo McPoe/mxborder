@@ -86,7 +86,6 @@ header.menudegr{
     color: #002868;
     border-color: #002868; }
 
-
 .buttonchat {
   display: inline-block;
   min-width: 225px;
@@ -187,6 +186,27 @@ p .mailto:hover{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/*FIRST MODAL*/
+.alerte {
+  width: 100%;
+  height: auto;
+  background: rgba(0,0,0,0.3);
+  
+  display: flex;
+  
+  animation: alerte 1s 1s forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+@keyframes alerte {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
 
 /*Modal*/
 h4 {
