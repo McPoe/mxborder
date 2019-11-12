@@ -1700,7 +1700,9 @@ header {
     transition: all 0.3s ease;
     }
     header .menu.slide-menu {
-      left: 0; }
+      left: 0;
+      z-index: 9999999999;
+       }
     header .menu li {
       margin: 0 0 20px;
       width: 100%; }
