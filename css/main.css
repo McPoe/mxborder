@@ -59,6 +59,12 @@ header.menudegr{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 }
 
+header.menudegr{
+  max-height: calc(100% – 30px);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 .button {
   display: inline-block;
   min-width: 225px;
