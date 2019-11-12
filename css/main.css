@@ -59,12 +59,6 @@ header.menudegr{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 }
 
-div.menuiph{
-  max-height: calc(100% – 30px);
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
 .button {
   display: inline-block;
   min-width: 225px;
@@ -1707,7 +1701,11 @@ header {
     }
     header .menu.slide-menu {
       left: 0;
-      z-index: 9999999999;
+      z-index: 99999999999999;
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+      position: -webkit-sticky;
        }
     header .menu li {
       margin: 0 0 20px;
